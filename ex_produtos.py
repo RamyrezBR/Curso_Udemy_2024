@@ -33,11 +33,12 @@ pp('\n')
 
 pp('Produtos ordenados por nome decrescente')
 produtos_ordenados=copy.deepcopy(novos_produtos)
-produtos_ordenados=sorted(produtos_ordenados, key=lambda p: p['preco'], reverse=True )
+produtos_ordenados=sorted(produtos_ordenados, key=lambda p: p['nome'], reverse=True )
 pp(produtos_ordenados)
 pp('\n')
 
 pp('Produtos ordenados por preço crescente')
 produtos_ordenados_por_preco=copy.deepcopy(produtos_ordenados)
 produtos_ordenados_por_preco=sorted(produtos_ordenados_por_preco, key=lambda p: p['preco'], reverse=False)
+
 pp(produtos_ordenados_por_preco)
